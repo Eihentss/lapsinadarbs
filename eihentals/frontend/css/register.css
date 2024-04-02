@@ -1,0 +1,108 @@
+/* register.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Papildinājums - elementi tiek izvietoti vertikāli */
+    height: 100vh; /* Padara, lai forma būtu pilnā lapas augstumā */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Pievieno atstarpi zem virsraksta */
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Pievieno atstarpi zem formas */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #666565;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+select {
+    height: 40px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-style: italic;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+
+    padding: 15px;
+    font-size: 18px;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+
+
+}
+/* register.css */
+
+/* Pārējais stils paliek nemainīgs */
+
+.role-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #fff; /* Mainiet fona krāsu pēc vajadzības */
+    color: #000000; /* Mainiet teksta krāsu pēc vajadzības */
+    font-size: 15px; /* Mainiet teksta izmēru pēc vajadzības */
+    font-family: Arial, sans-serif; /* Mainiet fontu pēc vajadzības */
+}
+
+.role-select option {
+    background-color: #000000; /* Mainiet fona krāsu izvēlnes opcijām pēc vajadzības */
+    color: #ffffff; /* Mainiet teksta krāsu izvēlnes opcijām pēc vajadzības */
+}

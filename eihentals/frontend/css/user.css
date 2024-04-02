@@ -1,0 +1,95 @@
+/* Pielāgots izkārtojums, lai visas tabulas būtu vienā rindā un būtu maksimums 3 kvadrāti katrā rindā */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Sākotnēji izvieto kreisajā pusē */
+}
+
+/* Katram elementam maksimālais platums 30% no vecāku elementa platuma un atstarpe starp elementiem */
+.admin-divs {
+    width: calc(33.33% - 20px); /* Platums aprēķināts, atņemot 20 pikseļu margas starp elementiem */
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Iekļaut border un padding platuma aprēķinos */
+}
+
+/* Ja ir tikai divi elementi rindā, tad tie aizņem 50%, nevis 33.33% */
+@media (max-width: 768px) {
+    .admin-divs {
+        width: calc(50% - 20px); /* Platums aprēķināts, atņemot 20 pikseļu margas starp elementiem */
+    }
+}
+
+/* Pārējais CSS paliek nemainīgs */
+.admin-divs {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 2px solid #007bff;
+}
+
+.admin-divs > div {
+    margin-bottom: 10px;
+}
+
+.admin-divs button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.admin-divs button:hover {
+    background-color: #0056b3;
+}
+
+#borrowForm {
+    display: none;
+}
+
+#borrowForm input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+#result {
+    display: none;
+}
+
+#admin-div button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#admin-div button:hover {
+    background-color: #c82333;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input-small {
+    width: 50px; /* Izmaiņas platums, lai būtu mazāks */
+    padding: 5px; /* Izmaiņas atkāpe */
+    font-size: 14px; /* Izmaiņas fonta lielums */
+    border-radius: 4px; /* Apaļš stūris */
+    border: 1px solid #ccc; /* Rāmja līnija */
+}

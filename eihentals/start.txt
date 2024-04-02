@@ -1,0 +1,2 @@
+http://localhost/dators/views/login.php
+http://localhost/dators
